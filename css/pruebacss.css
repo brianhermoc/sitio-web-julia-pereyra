@@ -9,7 +9,7 @@ body {
   background-image: linear-gradient(28deg, #fedd00 0%, #ec86d0 35%, #28724f 100%);
   background-size: 2000% 2000%;
   position: relative;
-  animation: cambios 5s ease-in-out infinite;
+  animation: cambios 10s ease-in-out infinite;
   transition: ease-in-out;
   text-align: center;
   background-repeat: no-repeat; }
@@ -293,8 +293,6 @@ textarea {
     body header .container {
       padding: auto;
       margin: auto; }
-    body h1 {
-      font-size: 0.3rem; }
   .container__grid {
     padding: 0;
     justify-content: center;

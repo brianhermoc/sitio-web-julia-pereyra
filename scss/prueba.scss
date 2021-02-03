@@ -18,7 +18,7 @@ body{
     background-image: $background-image;
     background-size:2000% 2000%;
     position: relative;
-    animation: cambios 5s ease-in-out infinite;
+    animation: cambios 10s ease-in-out infinite;
     transition: ease-in-out;
     text-align: center;
     background-repeat: no-repeat;
@@ -388,9 +388,9 @@ transition: all 0.3s ease-in-out;
             padding: auto;
             margin: auto;
         }
-        h1 {
-            font-size: 0.3rem;
-        }
+        // h1 {
+        //     font-size: 0.3rem;
+        // }
         }
     .container__grid{
         padding: 0;
