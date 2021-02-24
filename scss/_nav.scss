@@ -1,0 +1,75 @@
+/*-------------- estilos Menu ---------------------*/
+
+.main-nav{
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu{
+
+    justify-content: space-between;
+    display:block;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.social-icon{
+    justify-content: space-between;
+    color: $darkblue;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    
+    .social-icon__link {
+        text-decoration: none;
+    }
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: rgba(32,23,71,.8);
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: .3s linear;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    color: $white;
+    text-decoration: none;
+    
+
+}
+.menu__link:hover{
+    background-color: $salmon;
+    
+
+}
+.menu__link--select{
+    background-color: $salmon;
+
+}
+.mostrar{
+
+    border-radius: 5px;
+    height: 325px;
+}

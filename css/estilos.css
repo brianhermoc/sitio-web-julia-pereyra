@@ -1,8 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto&display=swap");
+/*-------------- estilos Menu ---------------------*/
+.main-nav {
+  position: relative;
+  z-index: 2000;
+  padding: 10px; }
+
+.icon-menu {
+  justify-content: space-between;
+  display: block;
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.6rem; }
+
+.social-icon {
+  justify-content: space-between;
+  color: rgba(32, 23, 71, 0.5);
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: transparent; }
+  .social-icon .social-icon__link {
+    text-decoration: none; }
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgba(32, 23, 71, 0.8);
+  list-style: none;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  transition: .3s linear; }
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  color: #eeeeee;
+  text-decoration: none; }
+
+.menu__link:hover {
+  background-color: #ff9da2; }
+
+.menu__link--select {
+  background-color: #ff9da2; }
+
+.mostrar {
+  border-radius: 5px;
+  height: 325px; }
+
 * {
   box-sizing: border-box;
   margin: 0; }
 
 body {
+  display: grid;
+  grid-template-columns: 1 100%;
+  grid-template-rows: 20px auto 15px;
+  grid-template-areas: "nav" "main" "foot";
+  font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100vh;
   color: #fff;
@@ -13,8 +83,21 @@ body {
   transition: ease-in-out;
   text-align: center;
   background-repeat: no-repeat; }
-  body h1, body h2 {
-    font-size: 5rem;
+  body h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 120px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px; }
+  body h2 {
+    font-family: "Amatic SC", cursive;
+    font-size: 100px;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 1px;
     color: transparent;
@@ -25,7 +108,8 @@ body {
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 1px; }
   body h3 {
-    font-size: 3rem;
+    font-family: "Amatic SC", cursive;
+    font-size: 60px;
     color: transparent;
     margin: auto;
     text-align: center;
@@ -33,7 +117,7 @@ body {
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 1px; }
   body h4, body h5, body h6 {
-    font-size: 1.2rem;
+    font-size: 24px;
     margin: 0;
     padding: 0;
     flex-wrap: wrap; }
@@ -68,12 +152,13 @@ body {
 
 /*----------------------FOOTER-------------------------*/
 .main-footer {
+  grid-area: foot;
   color: #817f7d;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem; }
   .main-footer .foot-indx {
-    margin-top: 5rem; }
+    margin-top: 3rem; }
 
 /*-----------------------FORM-------------------------------*/
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -124,6 +209,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   margin: 50px auto 100px auto; }
 
 input {
+  font-family: "Roboto", sans-serif;
   font-size: 0.875em;
   width: 470px;
   height: 50px;
@@ -150,7 +236,7 @@ textarea {
   background: transparent;
   outline: none;
   color: #726659;
-  font-family: 'Lato', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.875em;
   border: solid 1px #aca49c94;
   transition: all 0.3s ease-in-out;
