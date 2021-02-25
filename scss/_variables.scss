@@ -1,4 +1,4 @@
-$font-size: 20px;
+$font-size: 15px;
 $font-color:#eeeeee;
 $font-family: "Roboto", sans-serif;
 $font-family2: "Amatic SC",cursive;
@@ -7,10 +7,18 @@ $font-family2: "Amatic SC",cursive;
 
 $yellow: #ffce31;
 $cyan:#31cece;
-$magent: #ff31ce;
+$magent: #9e1d80;
+$trnsmagent: #ff31cf60;
 $green:rgb(40,114,79);
 $pink:#ff639c;
 $salmon: rgb(255,157,162);
 $blue:rgb(149,149,210);
-$darkblue:rgba(32,23,71,.5);
+$violet:rgb(52, 23, 88);
+$darkblue: rgba(32,23,71,.5);
+$trnswhite:rgba(231, 236, 234, 0.575);
 $white:#eeeeee;
+
+$background-image: linear-gradient(28deg, 
+rgba(254,221,0,1) 0%, 
+rgba(236,134,208,1) 35%, 
+rgba(40,114,79,1) 100%);
