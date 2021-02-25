@@ -8,17 +8,16 @@
     border-radius: 6px;
     width: 90%;
     padding-right: 0;
-    justify-content: space-between;    
+    justify-content: start;
 
     .main-section--txt{
         font-family: $font-family2;
         font-size: $font-size*2.3;
         text-align: left;
         justify-content: center;
-        padding-left: 1%;
         padding-top: 1rem;
-        align-items: center;
-        align-content: center;
+        // align-items: center;
+        // align-content: center;
     }
         .btn{
             color: $white;
@@ -84,7 +83,7 @@ body{
             background-position: left center;
         }
     }
-    
+
 }
 
 h1{
@@ -98,7 +97,7 @@ h1{
     align-items: center;
     padding: 3rem;
     -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-width: 1px;
 }
 h2 {
     font-family:$font-family2;
@@ -131,6 +130,34 @@ h4,h5,h6{
     flex-wrap: wrap;
 }
 
+//----------------------BANNERS------------------------//
+.main-section--bio{
+    grid-area: section;
+    @include section;
+    .main-section--txt{
+        padding-right: 1rem;
+    }
+
+}
+.main-section--work{
+    grid-area: section2;
+    @include section;
+    .main-section--txt{
+        text-align: right;
+        order: 2;
+        padding: 2rem;
+        margin: 0;
+        font-size: $font-size*2;
+        .section-img{
+            order: 1;
+            justify-content: start;
+            text-align: left;
+            padding-left: 0;
+            align-content: left
+            ;
+        }
+    }
+}
 /*--------------------------BIO-------------------------*/
 
 
@@ -156,7 +183,7 @@ h4,h5,h6{
             height:250px;
             border-radius: 40%;
             padding-bottom: 2rem;
-            
+
             }
     }
 }
@@ -169,7 +196,8 @@ h4,h5,h6{
     font-family: $font-family2;
     background: $darkblue;
     border-bottom:1px solid $trnsmagent;
-    border-left:1px solid bisque;
+    border-left:1px solid $trnsmagent;
+    box-shadow: $pink 10px;
     border-radius: 0.3em;
     padding: 0.75em;
     & p{
@@ -241,7 +269,7 @@ h4,h5,h6{
         background-color:rgba(75, 75, 75, 0.135);
         transition: .5s ease-in-out;
         border-radius: 5px;
-        
+
         img{
             width: 100%;
             object-fit: cover;
@@ -264,7 +292,7 @@ h4,h5,h6{
     z-index: 10;
     .container__grid__img:hover {
         transform: scale(0.8);
-    } 
+    }
 }
 .container.body-about{
     margin: auto;
@@ -275,7 +303,7 @@ h4,h5,h6{
 .container .navbar>*{
     color:black;
     margin-top: 1rem;
-        
+
     .dropdown-menu,
     .dropdown-item,
     .nav-link {
@@ -289,27 +317,6 @@ h4,h5,h6{
         background-color:transparent;
         color: black;
     }
-}
-
-.main-section--bio{
-    grid-area: section;
-    @include section;
-}
-.main-section--work{
-    grid-area: section2;
-    @include section;
-    .main-section--txt{
-        text-align: right;
-        order: 2;
-        padding: 2rem;
-        .section-img{
-            order: 1;
-            justify-content: right;
-            width: 50%;
-            padding-left: 0;
-        }
-    }
-
 }
 /*----------------------FOOTER-------------------------*/
 .main-footer{
@@ -332,30 +339,30 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
         color: #bbb5af94;
         }
-    
+
     input::-moz-placeholder, textarea::-moz-placeholder {
         color: #aca49c94;
         font-size: 0.875em;
         }
-    
+
     input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
         color: #bbb5af94;
         }
-    
+
     input::placeholder, textarea::placeholder {
         color: #aca49c94;
         font-size: 0.875em;
         }
-    
+
     input:focus::placeholder, textarea::focus:placeholder {
         color: #bbb5af94;
         }
-    
+
     input::-ms-placeholder, textarea::-ms-placeholder {
         color: #aca49c94;
         font-size: 0.875em;
         }
-    
+
     input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
         color: #bbb5af94;
         }
@@ -397,7 +404,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         color: #cbc6c194;
     }
 
-}    
+}
 
 
 
@@ -475,7 +482,7 @@ transition: all 0.3s ease-in-out;
 
 
 @media (min-width: 100px){
-    
+
     body{
         width: 100%;
         background-size:1000000% 10000%;
@@ -513,7 +520,7 @@ transition: all 0.3s ease-in-out;
     .container__grid{
         grid-template-columns: repeat(2,1fr);
     }
-        
+
 @media (min-width: 728px){
         .container__grid{
             grid-auto-flow: dense;
@@ -529,11 +536,11 @@ transition: all 0.3s ease-in-out;
             .container__grid__img:nth-child(3){
                 grid-row: 2/4;
                 grid-column: span 2;
-                
+
             }
             .container__grid__img:nth-child(2){
                 grid-row: 1/2;
-                
+
             }
             .container__grid__img:nth-child(8){
                 grid-column: 1/3;
@@ -542,7 +549,7 @@ transition: all 0.3s ease-in-out;
             .container__grid__img:nth-child(14){
                 grid-row: 7/9;
                 grid-column: 2/4;
-                
+
             }
         }
     }
