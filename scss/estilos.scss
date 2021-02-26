@@ -19,31 +19,31 @@
         // align-items: center;
         // align-content: center;
     }
-        .btn{
-            color: $white;
-            background-color: $trnsmagent;
-            border-radius: 30%;
+    .btn{
+        color: $white;
+        background-color: $trnsmagent;
+        border-radius: 30%;
     }
     .btn:hover{
             transform: scale(1.2);
             font-weight: bolder;
             background-color: $magent;
-    }
-    .section-img{
+        }
+        .section-img{
             width: 400px;
             height: 400px;
             border-radius: 6px;
             object-fit: cover;
             align-content: inherit;
+        }
     }
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0 ;
-}
-
-//------------------body-------------------//
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 ;
+    }
+    //------------------body-------------------//
 body{
     display: grid;
     grid-template-columns: 1 100%;
