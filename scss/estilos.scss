@@ -21,8 +21,8 @@
         justify-content: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        // align-items: center;
-        // align-content: center;
+        align-items: center;
+        align-content: center;
     }
     .btn{
         color: $white;
@@ -50,15 +50,17 @@
     }
     //------------------body-------------------//
 body{
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1 100%;
-    grid-template-rows: 35px auto auto auto 20px;
+    grid-template-rows: 35px auto auto auto auto 20px;
     row-gap: 3rem;
     grid-template-areas:
     "nav"
     "main"
     "section"
     "section2"
+    "section3"
     "foot";
     font-family: $font-family;
     width: 90%;
@@ -140,6 +142,9 @@ h4,h5,h6{
 }
 .section2-grid{
     grid-area: "section2";
+.sectio3-grid{
+    grid-area: "section3";
+}
 }
 .foot-grid{
     grid-area: "foot";
@@ -150,6 +155,7 @@ h4,h5,h6{
     @include section;
     .main-section--txt{
         padding-right: 1rem;
+        font-size:$font-size*1.9;
     }
 
 }
@@ -162,7 +168,7 @@ h4,h5,h6{
         order: 2;
         padding: 2rem;
         margin: 0;
-        font-size: $font-size*2;
+        font-size: $font-size*1.8;
         object-fit: cover;
         .btn{
             margin-bottom: 2rem;
@@ -174,6 +180,10 @@ h4,h5,h6{
             overflow: hidden;
         }
     }
+}
+.main-section--studio{
+    @include section;
+    font-size: $font-size;
 }
 /*--------------------------BIO-------------------------*/
 
@@ -329,18 +339,17 @@ h4,h5,h6{
     }
     .dropdown-item:focus, .dropdown-item:hover{
         background-color:transparent;
-        color: black;
+        color: $darkblue;
     }
 }
 /*----------------------FOOTER-------------------------*/
 .main-footer{
-    color: #817f7d;
+    font-size: medium;
+    color: $darkblue;
     text-align: center;
     padding-top: 1rem;
-    padding-bottom: 2rem;
-    .foot-indx{
-        margin-top: 3rem;
-    }
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
 }
 /*-----------------------FORM-------------------------------*/
 
@@ -472,7 +481,7 @@ transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
     textarea:hover {
     background:$blue;
-    color: #e2dedb;
+    color: $trnsmagent;
     }
 }
 
