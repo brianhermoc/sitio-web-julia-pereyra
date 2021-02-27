@@ -9,6 +9,9 @@
     width: 90%;
     max-height: 400px;
     padding-right: 0;
+    border-bottom:2px solid $trnsmagent;
+    border-left:2px solid $trnsmagent;
+    box-shadow: $pink 10px;
     // justify-content: start;
 
     .main-section--txt{
@@ -17,6 +20,7 @@
         text-align: left;
         justify-content: center;
         padding-top: 1rem;
+        padding-bottom: 1rem;
         // align-items: center;
         // align-content: center;
     }
@@ -86,43 +90,38 @@ body{
     }
 
 }
-
-h1{
+.navbar{
+    position: fixed;
+}
+h1,h2,h3,h4,h5,h6{
     font-family:$font-family2;
-    font-size: $font-size*7;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 1px;
     color: transparent;
     margin: auto;
     text-align: center;
     align-items: center;
-    padding: 3rem;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 1px;
 }
+h1{
+    font-size: $font-size*7;
+    padding: 3rem;
+    
+}
 h2 {
-    font-family:$font-family2;
     font-size: $font-size*5;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px;
-    color: transparent;
     margin: auto;
     text-align: center;
     align-items: center;
     padding: 3rem;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px;
 }
 
 h3{
-    font-family: $font-family2;
     font-size: $font-size*3;
-    color: transparent;
     margin: auto;
     text-align: center;
     align-items: center;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px;
 }
 h4,h5,h6{
     font-size: $font-size*1.2;
@@ -164,10 +163,15 @@ h4,h5,h6{
         padding: 2rem;
         margin: 0;
         font-size: $font-size*2;
+        object-fit: cover;
+        .btn{
+            margin-bottom: 2rem;
+            
+        }
         .section-img{
             order: 1;
             padding-left: 0;
-            ;
+            overflow: hidden;
         }
     }
 }

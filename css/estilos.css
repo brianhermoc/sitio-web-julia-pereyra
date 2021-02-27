@@ -34,41 +34,36 @@ body {
   100% {
     background-position: left center; } }
 
-h1 {
+.navbar {
+  position: fixed; }
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Amatic SC", cursive;
-  font-size: 105px;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px;
   color: transparent;
   margin: auto;
   text-align: center;
   align-items: center;
-  padding: 3rem;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px; }
+
+h1 {
+  font-size: 105px;
+  padding: 3rem; }
 
 h2 {
-  font-family: "Amatic SC", cursive;
   font-size: 75px;
-  -webkit-text-stroke-color: #000;
-  -webkit-text-stroke-width: 1px;
-  color: transparent;
   margin: auto;
   text-align: center;
   align-items: center;
-  padding: 3rem;
-  -webkit-text-stroke-color: #000;
-  -webkit-text-stroke-width: 1px; }
+  padding: 3rem; }
 
 h3 {
-  font-family: "Amatic SC", cursive;
   font-size: 45px;
-  color: transparent;
   margin: auto;
   text-align: center;
-  align-items: center;
-  -webkit-text-stroke-color: #000;
-  -webkit-text-stroke-width: 1px; }
+  align-items: center; }
 
 h4, h5, h6 {
   font-size: 18px;
@@ -97,13 +92,17 @@ h4, h5, h6 {
   border-radius: 6px;
   width: 90%;
   max-height: 400px;
-  padding-right: 0; }
+  padding-right: 0;
+  border-bottom: 2px solid #ff31cf60;
+  border-left: 2px solid #ff31cf60;
+  box-shadow: #ff639c 10px; }
   .main-section--bio .main-section--txt {
     font-family: "Amatic SC", cursive;
     font-size: 34.5px;
     text-align: left;
     justify-content: center;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
   .main-section--bio .btn {
     color: #eeeeee;
     background-color: #ff31cf60;
@@ -127,13 +126,17 @@ h4, h5, h6 {
   border-radius: 6px;
   width: 90%;
   max-height: 400px;
-  padding-right: 0; }
+  padding-right: 0;
+  border-bottom: 2px solid #ff31cf60;
+  border-left: 2px solid #ff31cf60;
+  box-shadow: #ff639c 10px; }
   .main-section--work .main-section--txt {
     font-family: "Amatic SC", cursive;
     font-size: 34.5px;
     text-align: left;
     justify-content: center;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
   .main-section--work .btn {
     color: #eeeeee;
     background-color: #ff31cf60;
@@ -152,10 +155,14 @@ h4, h5, h6 {
     order: 2;
     padding: 2rem;
     margin: 0;
-    font-size: 30px; }
+    font-size: 30px;
+    object-fit: cover; }
+    .main-section--work .main-section--txt .btn {
+      margin-bottom: 2rem; }
     .main-section--work .main-section--txt .section-img {
       order: 1;
-      padding-left: 0; }
+      padding-left: 0;
+      overflow: hidden; }
 
 /*--------------------------BIO-------------------------*/
 .main-container__bio {
