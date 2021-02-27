@@ -83,8 +83,9 @@ h4, h5, h6 {
 
 .section2-grid {
   grid-area: "section2"; }
-  .section2-grid .sectio3-grid {
-    grid-area: "section3"; }
+
+.sectio3-grid {
+  grid-area: "section3"; }
 
 .foot-grid {
   grid-area: "foot"; }
@@ -115,7 +116,8 @@ h4, h5, h6 {
   .main-section--bio .btn:hover {
     transform: scale(1.2);
     font-weight: bolder;
-    background-color: #9e1d80; }
+    background-color: #9e1d80;
+    transition: all .5s ease-in-out; }
   .main-section--bio .section-img {
     width: 100%;
     height: 400px;
@@ -152,7 +154,8 @@ h4, h5, h6 {
   .main-section--work .btn:hover {
     transform: scale(1.2);
     font-weight: bolder;
-    background-color: #9e1d80; }
+    background-color: #9e1d80;
+    transition: all .5s ease-in-out; }
   .main-section--work .section-img {
     width: 100%;
     height: 400px;
@@ -199,7 +202,8 @@ h4, h5, h6 {
   .main-section--studio .btn:hover {
     transform: scale(1.2);
     font-weight: bolder;
-    background-color: #9e1d80; }
+    background-color: #9e1d80;
+    transition: all .5s ease-in-out; }
   .main-section--studio .section-img {
     width: 100%;
     height: 400px;
@@ -315,7 +319,7 @@ h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0.733);
   z-index: 10; }
   .container__grid__img img:hover .container__grid__img:hover {
-    transform: scale(0.8); }
+    transform: scale(0.6); }
 
 .container.body-about {
   margin: auto;
@@ -339,11 +343,13 @@ h4, h5, h6 {
 
 /*----------------------FOOTER-------------------------*/
 .main-footer {
+  grid-area: "foot-grid";
+  font-size: 15px;
   font-size: medium;
   color: rgba(32, 23, 71, 0.5);
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 3rem; }
 
 /*-----------------------FORM-------------------------------*/
