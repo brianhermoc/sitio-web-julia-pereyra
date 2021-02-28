@@ -6,9 +6,10 @@
 
 body {
   margin-top: 10px;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: 1 100%;
-  grid-template-rows: 35px auto auto auto auto 20px;
+  grid-template-rows: 35px auto auto auto auto 30px;
   row-gap: 3rem;
   grid-template-areas: "nav" "main" "section" "section2" "section3" "foot";
   font-family: "Roboto", sans-serif;
@@ -16,7 +17,7 @@ body {
   height: 100%;
   color: #fff;
   background-image: linear-gradient(28deg, #fedd00 0%, #ec86d0 35%, #28724f 100%);
-  background-size: 3900px;
+  background-size: 3000% 3000%;
   position: relative;
   animation: cambios 9s ease-in-out infinite;
   transition: ease-in;
@@ -291,18 +292,23 @@ h4, h5, h6 {
 
 .gallery__grid {
   padding-bottom: 15px;
-  width: 100%;
-  margin: 0;
+  width: 80%;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4 300px 300px 300px 300px);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat 2 auto auto;
-  gap: .5rem; }
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
   .gallery__grid .container__grid__img {
-    width: 300px;
+    width: 350px;
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: center;
+    align-content: center;
     transition: .5s ease-in-out;
     border-radius: 5px; }
     .gallery__grid .container__grid__img img {
@@ -317,7 +323,7 @@ h4, h5, h6 {
         align-content: center; }
 
 .container__grid__img img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.733);
   z-index: 10; }
   .container__grid__img img:hover .container__grid__img:hover {
@@ -344,15 +350,18 @@ h4, h5, h6 {
     color: rgba(32, 23, 71, 0.5); }
 
 /*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
 .main-footer {
-  grid-area: "foot-grid";
+  height: 100%;
+  width: 100%;
   font-size: 15px;
   font-size: medium;
   color: rgba(32, 23, 71, 0.5);
   text-align: center;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem; }
+  margin: 0; }
 
 /*-----------------------FORM-------------------------------*/
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

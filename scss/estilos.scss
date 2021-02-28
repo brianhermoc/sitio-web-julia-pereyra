@@ -55,9 +55,10 @@
     //------------------body-------------------//
 body{
     margin-top: 10px;
+    margin-bottom: 10px;
     display: grid;
     grid-template-columns: 1 100%;
-    grid-template-rows: 35px auto auto auto auto 20px;
+    grid-template-rows: 35px auto auto auto auto 30px;
     row-gap: 3rem;
     grid-template-areas:
     "nav"
@@ -71,7 +72,7 @@ body{
     height: 100%;
     color:#fff;
     background-image: $background-image;
-    background-size: 3900px;
+    background-size: 3000% 3000%;
     position: relative;
     animation: cambios 9s ease-in-out infinite;
     transition:ease-in;
@@ -294,20 +295,24 @@ h4,h5,h6{
 
 .gallery__grid{
     padding-bottom: 15px;
-    width: 100%;
-    margin: 0;
+    width: 80%;
+    margin: auto;
     display:grid;
-    grid-template-columns: repeat(4 300px 300px 300px 300px);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat (2 auto auto );
-    gap: .5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
     .container__grid__img{
-        width: 300px;
+        width: 350px;
         display: flex;
         margin: 0;
         padding: 0;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
+        align-content: center;
         // background-color:rgba(75, 75, 75, 0.135);
         transition: .5s ease-in-out;
         border-radius: 5px;
@@ -329,7 +334,7 @@ h4,h5,h6{
     }
 }
 .container__grid__img img:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.733);
     z-index: 10;
     .container__grid__img:hover {
@@ -361,15 +366,18 @@ h4,h5,h6{
     }
 }
 /*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
+/*----------------------FOOTER-------------------------*/
 .main-footer{
-    grid-area: "foot-grid";
+    height: 100%;
+    width: 100%;
     font-size: $font-size;
     font-size: medium;
     color: $darkblue;
     text-align: center;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin: 0;
 }
 /*-----------------------FORM-------------------------------*/
 
