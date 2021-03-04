@@ -191,6 +191,8 @@ h4,h5,h6{
 .main-section--studio{
     @include section;
     font-size: $font-size;
+    object-position: top;
+    object-fit: cover;
 }
 /*--------------------------BIO-------------------------*/
 /*--------------------------BIO-------------------------*/
@@ -645,5 +647,29 @@ transition: all 0.3s ease-in-out;
         .dropdown-item,
         .nav-link {
             background-color: transparent;
+        }
+    }
+    //------------------- CONTAINER 404-----------------------------//
+    //------------------- CONTAINER 404-----------------------------//
+    //------------------- CONTAINER 404-----------------------------//
+    //------------------- CONTAINER 404-----------------------------//
+    .container-404{
+        text-align:center;
+        width: 100%;
+        max-width: 400px;
+        display:flex;
+        background-color: $darkblue;
+        padding: 20px;
+        border-radius: 50%;
+        line-height: 1.7;
+
+        .btn{
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: $white;
+            background-color: $trnsmagent;
+            border-radius: 30%;
+            padding: 10px 15px;
         }
     }

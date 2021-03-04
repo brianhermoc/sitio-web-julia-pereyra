@@ -186,7 +186,9 @@ h4, h5, h6 {
   border-bottom: 2px solid #ff31cf60;
   border-left: 2px solid #ff31cf60;
   box-shadow: #ff639c 10px;
-  font-size: 15px; }
+  font-size: 15px;
+  object-position: top;
+  object-fit: cover; }
   .main-section--studio .main-section--txt {
     font-family: "Amatic SC", cursive;
     font-size: 34.5px;
@@ -488,3 +490,21 @@ textarea {
   .dropdown-item,
   .nav-link {
     background-color: transparent; } }
+
+.container-404 {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  background-color: rgba(32, 23, 71, 0.5);
+  padding: 20px;
+  border-radius: 50%;
+  line-height: 1.7; }
+  .container-404 .btn {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: #ff31cf60;
+    border-radius: 30%;
+    padding: 10px 15px; }
