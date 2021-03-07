@@ -218,30 +218,24 @@ h4, h5, h6 {
 /*--------------------------BIO-------------------------*/
 /*--------------------------BIO-------------------------*/
 .main-container__bio {
+  grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2 auto;
-  grid-template-areas: "title photo" "txt";
+  grid-template-rows: 3 auto;
+  grid-template-areas: "title photo" "title photo" "txt txt";
   width: 100%; }
-  .main-container__bio .nombre {
-    grid-area: title;
-    font-size: 52.5px;
-    align-content: left;
-    text-align: center;
-    margin: 0; }
+  .main-container__bio h1 {
+    font-size: 60px; }
 
 .wrap-img-bio {
   grid-area: photo;
-  border-radius: 12px;
+  max-width: 300px;
   margin: 0;
-  overflow: hidden;
-  object-fit: cover; }
+  object-fit: cover;
+  padding-bottom: 1rem; }
   .wrap-img-bio .img-bio {
-    max-width: 350px;
-    max-height: 400px;
-    object-fit: cover;
-    width: 50%;
-    padding-bottom: 2rem;
+    max-width: 250px;
+    max-height: 300px;
     border-radius: 20px; }
 
 .about-txt {
@@ -302,7 +296,7 @@ h4, h5, h6 {
 
 .gallery__grid {
   padding-bottom: 15px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
